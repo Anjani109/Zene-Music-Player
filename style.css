@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&family=Varela+Round&display=swap');
+body{
+    background-color:antiquewhite;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    font-family: 'Ubuntu',sans-serif;
+}
+nav ul{
+    display: flex;
+    list-style-type: none;
+    height:65px;
+    background-color: black;
+    color: white;
+    align-items: center;
+}
+nav ul li{
+   padding: 0 15px;
+}
+.brand img{
+   width: 44px;
+   padding:0 8px;
+   border-radius: 33px;
+}
+.brand{
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.3rem;
+}
+.container{
+    min-height: 72vh;
+    background-color:black;
+    color: white;
+    font-family: 'Varela Round',sans-serif;
+    display: flex;
+    margin: 23px auto;
+    width: 60%;
+    background-image: url(Spotify-background.png);
+}
+.bottom{
+    position:sticky;
+    height: 80px;
+    background-color: black;
+    color: white;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 35px;
+}
+.icons{
+    margin-top: 14px;
+    color: white;
+}
+.icons i{
+    cursor:pointer;
+    padding: 0 15px;
+}
+#myProgressBar{
+    width: 80vw;
+    cursor: pointer;
+}
+.songItem{
+ height: 50px;
+ display: flex;
+ background-color: rgb(107, 240, 107);
+ color: black;
+ margin: 12px 10px;
+ justify-content: space-between;
+ align-items: center;
+ border-radius: 20px;
+}
+.songItem img{
+    width: 45px;
+    margin: 0 10px;
+    border-radius: 34px;
+}
+.timeStamp{
+    margin: 0 10px;
+    font-size: smaller;
+}
+.songName{
+    margin: 5px;
+    font:bolder;
+}
+.songListPlay i{
+    margin: 5px;
+    cursor: pointer;
+}
+.songItemContainer{
+    margin-top: 75px;
+}
+.songInfo img{
+    width: 52px;
+    margin: 10px;
+    position: absolute;
+    left: 75px;
+    top: 9px;
+    opacity: 0;
+    transition: opacity 0.4s ease-in;
+}
+.songInfo songAndSinger{
+    position: absolute;
+}
+.songInfo{
+    color: rgb(131, 7, 248);
+    margin: 20px;
+    font-family: 'Varela Round',sans-serif;
+}
+@media only screen and (maxwidth:1100px){
+    body{
+        background-color: lightblue;
+    }
+}
+.volume-bar{
+    position: absolute;
+    right:75px;
+    top:78px;
+}
+.initialTime{
+    position: absolute;
+    left:145px;
+    top:25px;
+}
+.finalTime{
+    position: absolute;
+    right:145px;
+    top:25px;
+}
+.player-right img{
+    margin-right: 13px;
+    position: absolute;
+    right:200px;
+    top:79px;
+    width: 17px;
+    height: 17px;
+}
+.rewind-bttn{
+    color: white;
+    background-color:maroon;
+}
+.forward-bttn{
+    color: white;
+    background-color:maroon;
+}
+.text{
+    color: white;
+    background-color:maroon;
+    position:absolute;
+    top:78px;
+    right:35px;
+} 

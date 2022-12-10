@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zene - your personalised music app</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li class="brand"><img src="zene-logo.png" alt="Zene-logo">Zene</li>
+            <li>Home</li>
+            <li>About</li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="songList">
+            <h1>Pop Music</h1>
+        <div class="songItemContainer">
+            <div class="songItem">
+                <img  alt="cover-img">
+                <span class="songName"></span>
+                <span class="songListPlay" ><span class="timeStamp">03:49 </span><i id="0" class="fa-solid songItemPlay fa-circle-play" ></i></span>
+            </div>
+            <div class="songItem">
+                <img  alt="cover-img">
+                <span class="songName"></span>
+                <span class="songListPlay"><span class="timeStamp">03:10 </span><i id="1" class="fa-solid songItemPlay fa-circle-play"></i></span>
+            </div>
+            <div class="songItem">
+                <img  alt="cover-img">
+                <span class="songName"></span>
+                <span class="songListPlay"><span class="timeStamp">02:43 </span><i id="2" class="fa-solid songItemPlay fa-circle-play"></i></span>
+            </div>
+            <div class="songItem">
+                <img  alt="cover-img">
+                <span class="songName"></span>
+                <span class="songListPlay"><span class="timeStamp">02:58 </span><i id="3" class="fa-solid songItemPlay fa-circle-play"></i></span>
+            </div>
+            <div class="songItem">
+                <img  alt="cover-img">
+                <span class="songName"></span>
+                <span class="songListPlay"><span class="timeStamp">03:26</span><i id="4" class="fa-solid songItemPlay fa-circle-play"></i></span>
+            </div>
+            <div class="songItem">
+                <img  alt="cover-img">
+                <span class="songName"></span>
+                <span class="songListPlay"><span class="timeStamp">04:13 </span><i id="5" class="fa-solid songItemPlay fa-circle-play"></i></span>
+            </div>
+            <div class="songItem">
+                <img  alt="cover-img">
+                <span class="songName"></span>
+                <span class="songListPlay"><span class="timeStamp">03:13 </span><i id="6" class="fa-solid songItemPlay fa-circle-play"></i></span>
+            </div>
+            <div class="songItem">
+                <img  alt="cover-img">
+                <span class="songName"></span>
+                <span class="songListPlay"><span class="timeStamp">03:11 </span><i id="7" class="fa-solid songItemPlay fa-circle-play"></i></span>
+            </div>
+            <div class="songItem">
+                <img  alt="cover-img">
+                <span class="songName"></span>
+                <span class="songListPlay"><span class="timeStamp">02:21</span><i id="8" class="fa-solid songItemPlay fa-circle-play"></i></span>
+            </div>
+            <div class="songItem">
+                <img  alt="cover-img">
+                <span class="songName"></span>
+                <span class="songListPlay"><span class="timeStamp">02:08</span><i id="9" class="fa-solid songItemPlay fa-circle-play"></i></span>
+            </div>
+            <div class="songItem">
+                <img  alt="cover-img">
+                <span class="songName"></span>
+                <span class="songListPlay"><span class="timeStamp">04:42</span><i id="10" class="fa-solid songItemPlay fa-circle-play"></i></span>
+            </div>
+            
+        </div>
+        </div>
+        <div class="songBanner"></div>
+    </div>
+
+    <div class="bottom">
+        <span class="initialTime">00:00</span>
+        <input type="range" name="range" id="myProgressBar" min="0" max="100" value="0">
+        <span class="finalTime">03:49</span>
+
+        <div class="icons">
+            <!-- fontAwesome icons-->
+            <button class="pcast-rewind"><div class="rewind-bttn"><span class="text-left">-10</span></div></button>
+            <i class="fa-solid fa-backward" id ="previous"></i>
+            <i class="fa-solid fa-circle-play" id="masterPlay"></i>
+            <i class="fa-solid fa-forward" id="next"></i>
+            <button class="pcast-forward"><div class="forward-bttn"><span class="text-right">+10</span></div></button>
+        </div>
+        <div class="songInfo">
+            <img src="Gif.gif" alt="gif" id="gif"> 
+            <p class="songAndSinger"> <span id="masterSongName">Break My Heart -Dua Lipa</span></p> 
+            <hr>
+        </div>
+
+        <div class="pcast-player">
+            <div class="pcast-player-controls">
+                <div class="player-right"> 
+                <button class="pcast-mute">
+                    <span class="text">Mute</span></button>
+                    <input class="volume-bar" type="range" min="0" max="10">
+                    <img src="volume-img.png" alt="Volume">
+                </div>
+            </div>
+            </div>
+    </div>
+    <script src="https://kit.fontawesome.com/fb8dce4dd1.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
